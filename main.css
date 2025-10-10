@@ -1,0 +1,46 @@
+/* Custom Tailwind Configuration
+   Tailwind JS config moved to `tailwind.config.js`
+*/
+/* Custom global styles for the simplified theme */
+body {
+            background-color: #1f2937; /* Primary Dark */
+            color: #f3f4f6;
+            margin: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+        }
+
+        /* Content Container */
+        #content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Styling for section titles and divider line */
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            color: #f3f4f6;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 4px;
+            background-color: #06b6d4; /* Accent Blue */
+            border-radius: 2px;
+        }
+        
+        /* Ensure anchor links scroll past the sticky header */
+        .scroll-target {
+            scroll-margin-top: 100px; /* Adjust based on header height */
+        }
+        
+        /* Simplified Background Pattern */
+        .pattern-bg {
+            background-image: radial-gradient(#374151 1px, transparent 0);
+            background-size: 40px 40px;
+        }
