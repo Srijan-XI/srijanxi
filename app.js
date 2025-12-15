@@ -2,7 +2,10 @@ window.onload = function () {
     // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Mobile Menu Toggle Functionality
+    initMobileMenu();
+};
+
+function initMobileMenu() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
@@ -10,28 +13,29 @@ window.onload = function () {
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     const body = document.body;
 
-    // Function to open mobile menu
-    function openMobileMenu() {
+    if (!mobileMenuBtn || !mobileMenu || !mobileMenuOverlay) return;
+
+    const openMobileMenu = () => {
         mobileMenu.classList.add('active');
         mobileMenuOverlay.classList.add('active');
         mobileMenuBtn.classList.add('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        mobileMenu.setAttribute('aria-hidden', 'false');
         body.classList.add('menu-open');
 
         // Re-initialize icons for dynamically shown content
-        setTimeout(() => {
-            lucide.createIcons();
-        }, 100);
-    }
+        setTimeout(() => lucide.createIcons(), 50);
+    };
 
-    // Function to close mobile menu
-    function closeMobileMenu() {
+    const closeMobileMenu = () => {
         mobileMenu.classList.remove('active');
         mobileMenuOverlay.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
         body.classList.remove('menu-open');
-    }
+    };
 
-    // Toggle mobile menu when hamburger button is clicked
     mobileMenuBtn.addEventListener('click', () => {
         if (mobileMenu.classList.contains('active')) {
             closeMobileMenu();
@@ -40,22 +44,29 @@ window.onload = function () {
         }
     });
 
-    // Close mobile menu when close button is clicked
-    mobileMenuClose.addEventListener('click', closeMobileMenu);
-
-    // Close mobile menu when overlay is clicked
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
     mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
-    // Close mobile menu when any navigation link is clicked
     mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            closeMobileMenu();
-        });
+        link.addEventListener('click', closeMobileMenu);
     });
 
-    // Close menu on escape key press
+    document.addEventListener('click', (e) => {
+        const isMenuOpen = mobileMenu.classList.contains('active');
+        if (!isMenuOpen) return;
+        const clickedInsideMenu = mobileMenu.contains(e.target);
+        const clickedButton = mobileMenuBtn.contains(e.target);
+        if (!clickedInsideMenu && !clickedButton) closeMobileMenu();
+    });
+
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && mobileMenu.classList.contains('active')) {
             closeMobileMenu();
         }
     });

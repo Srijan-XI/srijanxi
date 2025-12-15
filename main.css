@@ -114,3 +114,142 @@ body {
 body.menu-open {
     overflow: hidden;
 }
+
+/* --- MOBILE RESPONSIVE IMPROVEMENTS --- */
+@media (max-width: 768px) {
+    .particles-container {
+        opacity: 0.5;
+    }
+
+    .floating-ghosts .ghost {
+        font-size: 1.5rem;
+    }
+
+    .hero-bg {
+        min-height: 60vh;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-3px) scale(1.01);
+    }
+
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+    }
+
+    p,
+    li {
+        line-height: 1.6;
+    }
+
+    .glitch-title {
+        animation: text-glitch 0.3s infinite alternate, pulse-glow 3s ease-in-out infinite;
+    }
+
+    .spider-web {
+        opacity: 0.3;
+    }
+
+    .blood-drip-container {
+        opacity: 0.5;
+    }
+
+    .form-input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .particles-container {
+        opacity: 0.3;
+    }
+
+    .floating-ghosts .ghost-2,
+    .floating-ghosts .ghost-3 {
+        display: none;
+    }
+
+    .btn,
+    .cta-button,
+    .crush-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    #mobile-menu {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #mobile-menu a {
+        padding: 12px 16px;
+        display: block;
+    }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero-bg {
+        min-height: 100vh;
+    }
+
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pricing-card {
+        max-width: 100%;
+    }
+
+    .feature-card {
+        min-height: 280px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .feature-card:hover {
+        transform: none;
+    }
+
+    .cta-button:hover {
+        transform: none;
+    }
+
+    .feature-card:active {
+        transform: scale(0.98);
+    }
+
+    .cta-button:active {
+        transform: scale(0.95);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .floating-ghosts,
+    .particles-container {
+        display: none;
+    }
+}
