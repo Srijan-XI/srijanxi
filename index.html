@@ -1,14 +1,47 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srijan XI</title>
+    <title>Srijan Kumar Cybersecurity &amp; AI Enthusiast </title>
+    <meta name="description"
+        content="Srijan Kumar  Security-focused software engineer specializing in cybersecurity, AI/ML, and backend development. Explore projects, experience, and certifications.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Srijan Kumar  Cybersecurity &amp; AI Enthusiast">
+    <meta property="og:description"
+        content="Building secure, intelligent systems at the intersection of cybersecurity and AI/ML.">
+    <meta property="og:image" content="img/about.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Srijan Kumar  Cybersecurity &amp; AI Enthusiast">
+    <meta name="twitter:description"
+        content="Building secure, intelligent systems at the intersection of cybersecurity and AI/ML.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Srijan Kumar",
+      "jobTitle": "Security-Focused Software Engineer",
+      "sameAs": [
+        "https://github.com/Srijan-XI",
+        "https://linkedin.com/in/srijan-xi",
+        "https://dev.to/srijan-xi"
+      ]
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Load Lucide Icons (deferred for performance) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
@@ -30,8 +63,12 @@
         <!-- Header & Navigation (Sticky for easy access) -->
         <header class="sticky top-0 z-50 shadow-lg border-b border-gray-700/50 backdrop-blur-sm bg-primary-dark/90">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-                <h1 class="text-2xl font-bold text-accent-blue mb-4 flex items-center"><i data-lucide="terminal"
-                        class="w-5 h-5 mr-2"></i> SRIJAN KUMAR <span class="text-gray-400">/Innovator</span></h1>
+                <a href="#home"
+                    class="text-2xl font-bold text-accent-blue flex items-center hover:opacity-80 transition duration-200"
+                    aria-label="Srijan Kumar  Back to top">
+                    <i data-lucide="terminal" class="w-5 h-5 mr-2" aria-hidden="true"></i> SRIJAN KUMAR <span
+                        class="text-gray-400 ml-1">/Innovator</span>
+                </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-6 text-gray-300">
@@ -86,17 +123,24 @@
                     <!-- Social Links in Mobile Menu -->
                     <div class="mt-auto px-8 py-6 border-t border-gray-700">
                         <div class="flex justify-center space-x-6">
-                            <a href="https://github.com/Srijan-XI" target="_blank"
+                            <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profile"
                                 class="text-gray-400 hover:text-accent-blue transition duration-200">
-                                <i data-lucide="github" class="w-6 h-6"></i>
+                                <i data-lucide="github" class="w-6 h-6" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank"
+                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn Profile"
                                 class="text-gray-400 hover:text-accent-blue transition duration-200">
-                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                                <i data-lucide="linkedin" class="w-6 h-6" aria-hidden="true"></i>
                             </a>
-                            <a href="mailto:srijansah11@outlook.com"
+                            <a href="https://dev.to/srijanxi" target="_blank" rel="noopener noreferrer"
+                                aria-label="DEV Community Profile"
                                 class="text-gray-400 hover:text-accent-blue transition duration-200">
-                                <i data-lucide="mail" class="w-6 h-6"></i>
+                                <i data-lucide="newspaper" class="w-6 h-6" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:srijansah11@outlook.com" aria-label="Send Email"
+                                class="text-gray-400 hover:text-accent-blue transition duration-200">
+                                <i data-lucide="mail" class="w-6 h-6" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -115,21 +159,25 @@
             <section id="home" class="scroll-target pt-8 pb-16">
                 <div class="md:flex md:items-center">
                     <div class="md:w-3/4">
-                        <h2 class="text-5xl font-extrabold mb-4 leading-tight">
-                            Building secure, intelligent systems <span class="text-accent-blue">for real-world use.</span>
-                        </h2>
+                        <h1 class="text-5xl font-extrabold mb-4 leading-tight">
+                            Building secure, intelligent systems <span class="text-accent-blue">for real-world
+                                use.</span>
+                        </h1>
                         <!---subheadline-->
-                        <h3 class="text-3xl font-semibold mb-2 leading-tight">
-                            Security-focused software engineer working across cybersecurity, <span class="text-accent-blue">AI/ML, and backend development.</span>
-                        </h3>
+                        <h2 class="text-3xl font-semibold mb-2 leading-tight">
+                            Security-focused software engineer working across cybersecurity, <span
+                                class="text-accent-blue">AI/ML, and backend development.</span>
+                        </h2>
                         <p class="text-xl text-gray-300 leading-relaxed max-w-4xl">
-                            I'm <strong>Srijan Kumar</strong>, a security-focused software engineer building intelligent, resilient systems at the intersection of cybersecurity and AI/ML. 
+                            I'm <strong>Srijan Kumar</strong>, a security-focused software engineer building
+                            intelligent, resilient systems at the intersection of cybersecurity and AI/ML.
                             I design scalable backend solutions that prioritize real-world security and usability.
                         </p>
                         <p class="text-xl text-gray-300 leading-relaxed max-w-4xl mt-4">
-                            My experience includes working as an AI Intern at SPARKIIT and contributing as a Guest Blogger at the <a
-                                href="https://dev.to/srijanxi" target="_blank"
-                                class="text-accent-blue hover:underline">DEV Community</a>, where I break down complex engineering and security problems into actionable solutions.
+                            My experience includes working as an AI Intern at SPARKIIT and contributing as a Guest
+                            Blogger at the <a href="https://dev.to/srijanxi" target="_blank" rel="noopener noreferrer"
+                                class="text-accent-blue hover:underline">DEV Community</a>, where I break down complex
+                            engineering and security problems into actionable solutions.
                         </p>
                         <div class="mt-8 flex space-x-4">
                             <a href="#projects"
@@ -137,16 +185,18 @@
                                 View Key Projects
                                 <i data-lucide="folder-lock" class="w-5 h-5 ml-2"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank"
+                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                                aria-label="Connect on LinkedIn"
                                 class="px-6 py-3 border border-accent-blue text-accent-blue font-semibold rounded-lg hover:bg-accent-blue/10 transition duration-300 flex items-center">
                                 Connect on LinkedIn
                             </a>
                         </div>
                     </div>
                     <!-- Mock Profile Icon -->
-                    <div class="hidden md:flex md:w-1/4 justify-center mt-8 md:mt-0">
-                        <img src="img/about.png" alt="Srijan Kumar"
-                            class="w-48 h-64 rounded-full border-4 border-accent-blue shadow-lg object-cover">
+                    <div class="flex justify-center mt-8 md:mt-0 md:w-1/4">
+                        <img src="img/about.png" alt="Srijan Kumar - Security Engineer" width="192" height="256"
+                            loading="lazy"
+                            class="w-32 h-40 md:w-48 md:h-64 rounded-full border-4 border-accent-blue shadow-lg object-cover">
                         <!-- Alternatively, use an icon -->
                         <!------ <i data-lucide="monitor-dot" class="w-32 h-32 text-accent-blue opacity-80"></i> ---->
 
@@ -224,7 +274,7 @@
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-100">Guest Blogger, Technical Writer & Ghost Writer
                         </h3>
-                        <p class="text-gray-400 mb-2">DEV Community (Forem) | Nov 2023 – Present</p>
+                        <p class="text-gray-400 mb-2">DEV Community (Forem) | Nov 2023 â€“ Present</p>
                         <ul class="list-disc space-y-2 pl-5 text-gray-300">
                             <li>Published 25+ high-impact technical articles on cybersecurity, C++, and AI, achieving
                                 12,000+ cumulative organic views in 6 months through strategic SEO optimization.</li>
@@ -241,7 +291,7 @@
                             class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-100">Artificial Intelligence Intern</h3>
-                        <p class="text-gray-400 mb-2">SPARKIIT | June 2025 – August 2025</p>
+                        <p class="text-gray-400 mb-2">SPARKIIT | June 2025 â€“ August 2025</p>
                         <ul class="list-disc space-y-2 pl-5 text-gray-300">
                             <li>Developed 5 end-to-end ML projects (classification, regression, recommendation),
                                 achieving 82-100% model accuracy through systematic data preprocessing.</li>
@@ -258,7 +308,7 @@
                             class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-100">Technical Trainee - Industrial Training</h3>
-                        <p class="text-gray-400 mb-2">Indian Railways (Modern Rail Coach Factory) | June 2025 – July
+                        <p class="text-gray-400 mb-2">Indian Railways (Modern Rail Coach Factory) | June 2025 â€“ July
                             2025</p>
                         <ul class="list-disc space-y-2 pl-5 text-gray-300">
                             <li>Completed one-month technical training, gaining practical exposure to industrial
@@ -274,7 +324,7 @@
                             class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-100">Web Development Intern</h3>
-                        <p class="text-gray-400 mb-2">CodSoft | April 2025 – May 2025</p>
+                        <p class="text-gray-400 mb-2">CodSoft | April 2025 â€“ May 2025</p>
                         <ul class="list-disc space-y-2 pl-5 text-gray-300">
                             <li>Developed 3 responsive front-end projects (landing page, calculator app, portfolio
                                 website) using HTML5, CSS3, and JavaScript.</li>
@@ -293,7 +343,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     <!-- Project Card 1: MM-CT-DAS -->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="scan" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">MM-CT-DAS: Multi-Modal Threat Detection
                             System</h3>
@@ -301,14 +351,16 @@
                         <p class="text-gray-300 text-sm">A Production-Ready Cybersecurity Detection System utilizing
                             trained ML models for comprehensive threat analysis. Showcases skills in C++, security
                             architecture, and AI-driven defense.</p>
-                        <a href="https://github.com/Srijan-XI/MM-CT-DAS" target="_blank"
+                        <a href="https://github.com/Srijan-XI/MM-CT-DAS" target="_blank" rel="noopener noreferrer"
+                            aria-label="View MM-CT-DAS on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                     </div>
 
                     <!-- Project Card 2: ThreatFusion -->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="network" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">ThreatFusion: Modular Threat Detection
                             Suite</h3>
@@ -316,14 +368,16 @@
                         <p class="text-gray-300 text-sm">Modular project combining C++, Python, and Go to deliver
                             multi-layered threat detection through network scanning, log analysis, and behavioral
                             monitoring for comprehensive security assessment.</p>
-                        <a href="https://github.com/Srijan-XI/ThreatFusion" target="_blank"
+                        <a href="https://github.com/Srijan-XI/ThreatFusion" target="_blank" rel="noopener noreferrer"
+                            aria-label="View ThreatFusion on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                     </div>
 
                     <!-- Project Card 3: ShieldBlocker-V8 (Web Extension) -->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="shield-ban" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">ShieldBlocker-V8: Cross-Browser Ad Blocker
                         </h3>
@@ -332,25 +386,31 @@
                             powered by WebExtension APIs. Blocks intrusive ads using static filter rules and allows
                             per-site control.</p>
                         <a href="https://github.com/Srijan-XI/ShieldBlocker-V8" target="_blank"
+                            rel="noopener noreferrer" aria-label="View ShieldBlocker-V8 on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                     </div>
 
                     <!-- Project Card 4: FLTK -->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="bar-chart-3" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">FLTK: Freelancer Toolkit</h3>
                         <p class="text-sm text-gray-400 mb-4">Focus: Flask, Web Application, Freelancing Tools</p>
-                        <p class="text-gray-300 text-sm">A self-hosted web application built with Flask that brings together every tool a freelancer needs in one 
-                            place — from deadline prediction to invoicing, expense tracking, and profitability reports.</p>
-                        <a href="https://github.com/Srijan-XI/FLTK" target="_blank"
+                        <p class="text-gray-300 text-sm">A self-hosted web application built with Flask that brings
+                            together every tool a freelancer needs in one
+                            place from deadline prediction to invoicing, expense tracking, and profitability reports.
+                        </p>
+                        <a href="https://github.com/Srijan-XI/FLTK" target="_blank" rel="noopener noreferrer"
+                            aria-label="View FLTK on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                     </div>
                     <!-------------------project 05--------------->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="vault" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">ThreatViz: Cybersecurity Threat
                             Intelligence Dashboard</h3>
@@ -358,13 +418,15 @@
                         <p class="text-gray-300 text-sm">ThreatViz is a modular cybersecurity project that combines C++,
                             Python, and Go to deliver multi-layered threat detection through network scanning, log
                             analysis, and behavioral monitoring for comprehensive security assessment.</p>
-                        <a href="https://github.com/Srijan-XI/ThreatViz" target="_blank"
+                        <a href="https://github.com/Srijan-XI/ThreatViz" target="_blank" rel="noopener noreferrer"
+                            aria-label="View ThreatViz on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                     </div>
                     <!-------------------project 06--------------->
-                    <div class="bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
                         <i data-lucide="file-text" class="w-8 h-8 text-accent-blue mb-3"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2"> PDF Downloader</h3>
                         <p class="text-sm text-gray-400 mb-4">Focus: PDF Management, Downloading, and Processing</p>
@@ -372,9 +434,11 @@
                             downloads, network speed monitoring, and pause/resume functionality.
                             Easily build standalone executables for Windows, Linux, and macOS.</p>
 
-                        <a href="https://github.com/Srijan-XI/PDF-Downloader" target="_blank"
+                        <a href="https://github.com/Srijan-XI/PDF-Downloader" target="_blank" rel="noopener noreferrer"
+                            aria-label="View PDF Downloader on GitHub (opens in new tab)"
                             class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
-                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
                         </a>
                         <!----
                         <a href="https://ai-project-manager-auth0.vercel.app/" target="_blank" class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
@@ -442,47 +506,95 @@
             <!-- SECTION 6: CONTACT -->
             <section id="contact" class="scroll-target pt-12 pb-16">
                 <h2 class="section-title text-3xl font-bold mb-8">Get In Touch</h2>
-                <div class="bg-gray-700/40 p-8 rounded-xl shadow-lg max-w-2xl mx-auto border border-accent-blue/30">
-                    <p class="text-lg text-gray-300 mb-6 text-center">I'm actively seeking opportunities to build secure
-                        and intelligent systems. Let's collaborate!</p>
 
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <div
+                    class="bg-gray-700/30 p-6 md:p-8 rounded-xl shadow-lg max-w-3xl mx-auto border border-accent-blue/20 text-center">
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto leading-relaxed">
+                        I'm actively seeking opportunities to build secure and intelligent systems. Let's collaborate!
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
                         <!-- Contact Email -->
-                        <div class="flex items-center text-lg text-gray-300">
-                            <i data-lucide="mail" class="w-6 h-6 mr-3 text-accent-blue"></i>
-                            <a href="mailto:srijansah11@outlook.com"
-                                class="hover:text-accent-blue transition duration-200">srijansah11@outlook.com</a>
-                        </div>
+                        <a href="mailto:srijansah11@outlook.com" aria-label="Send email to Srijan Kumar"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="mail"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">Email</span>
+                            <span class="text-xs text-gray-400 mt-1">srijansah11@outlook.com</span>
+                        </a>
+
                         <!-- LinkedIn -->
-                        <div class="flex items-center text-lg text-gray-300">
-                            <i data-lucide="linkedin" class="w-6 h-6 mr-3 text-accent-blue"></i>
-                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank"
-                                class="hover:text-accent-blue transition duration-200">LinkedIn Profile</a>
-                        </div>
+                        <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on LinkedIn (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="linkedin"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">LinkedIn</span>
+                            <span class="text-xs text-gray-400 mt-1">Let's connect</span>
+                        </a>
+
                         <!-- GitHub -->
-                        <div class="flex items-center text-lg text-gray-300">
-                            <i data-lucide="github" class="w-6 h-6 mr-3 text-accent-blue"></i>
-                            <a href="https://github.com/Srijan-XI" target="_blank"
-                                class="hover:text-accent-blue transition duration-200">GitHub Profile</a>
-                        </div>
+                        <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on GitHub (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="github"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">GitHub</span>
+                            <span class="text-xs text-gray-400 mt-1">View my code</span>
+                        </a>
+
+                        <!-- DEV.to -->
+                        <a href="https://dev.to/srijan-xi" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on DEV Community (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="newspaper"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">DEV.to</span>
+                            <span class="text-xs text-gray-400 mt-1">Read my articles</span>
+                        </a>
                     </div>
                 </div>
             </section>
 
         </main>
 
-        <!-- Footer (Static for all views) -->
-        <footer class="bg-primary-dark/90 mt-12 py-6 border-t border-gray-700/50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p class="text-sm text-gray-500">&copy; 2026 Srijan Kumar and Srijan-XI . All Rights
-                    Reserved.</p>
+        <!-- Footer -->
+        <footer class="bg-primary-dark/90 mt-12 py-8 border-t border-gray-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+                <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 text-sm text-gray-400">
+                    <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">GitHub</a>
+                    <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">LinkedIn</a>
+                    <a href="https://dev.to/srijan-xi" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">DEV.to</a>
+                    <a href="mailto:srijansah11@outlook.com"
+                        class="hover:text-accent-blue transition duration-200">Email</a>
+                </div>
+                <p class="text-sm text-gray-500">&copy; <span id="copyright-year">2026</span> Srijan Kumar &amp;
+                    Srijan-XI. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
 
 
-    <!-- JavaScript for Icon Initialization -->
-    <script src="app.js"></script>
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn"
+        class="fixed bottom-8 right-8 p-3 bg-accent-blue text-primary-dark rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50 hover:scale-110"
+        aria-label="Scroll to top">
+        <i data-lucide="arrow-up" class="w-5 h-5" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
 </body>
 
 </html>
