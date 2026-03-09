@@ -1,0 +1,600 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srijan Kumar Cybersecurity &amp; AI Enthusiast </title>
+    <meta name="description"
+        content="Srijan Kumar  Security-focused software engineer specializing in cybersecurity, AI/ML, and backend development. Explore projects, experience, and certifications.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Srijan Kumar  Cybersecurity &amp; AI Enthusiast">
+    <meta property="og:description"
+        content="Building secure, intelligent systems at the intersection of cybersecurity and AI/ML.">
+    <meta property="og:image" content="img/about.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Srijan Kumar  Cybersecurity &amp; AI Enthusiast">
+    <meta name="twitter:description"
+        content="Building secure, intelligent systems at the intersection of cybersecurity and AI/ML.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Srijan Kumar",
+      "jobTitle": "Security-Focused Software Engineer",
+      "sameAs": [
+        "https://github.com/Srijan-XI",
+        "https://linkedin.com/in/srijan-xi",
+        "https://dev.to/srijan-xi"
+      ]
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons (deferred for performance) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico?v=1">
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png?v=1">
+    <link rel="manifest" href="./favicon_io/site.webmanifest?v=1">
+
+</head>
+
+<body class="font-sans antialiased pattern-bg">
+
+    <!-- HTML Content Wrapper -->
+    <div id="content-wrapper">
+
+        <!-- Header & Navigation (Sticky for easy access) -->
+        <header class="sticky top-0 z-50 shadow-lg border-b border-gray-700/50 backdrop-blur-sm bg-primary-dark/90">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <a href="#home"
+                    class="text-2xl font-bold text-accent-blue flex items-center hover:opacity-80 transition duration-200"
+                    aria-label="Srijan Kumar  Back to top">
+                    <i data-lucide="terminal" class="w-5 h-5 mr-2" aria-hidden="true"></i> SRIJAN KUMAR <span
+                        class="text-gray-400 ml-1">/Innovator</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6 text-gray-300">
+                    <a href="#home" class="nav-link hover:text-accent-blue transition duration-200">Home</a>
+                    <a href="#skills" class="nav-link hover:text-accent-blue transition duration-200">Expertise</a>
+                    <a href="#experience" class="nav-link hover:text-accent-blue transition duration-200">Experience</a>
+                    <a href="#projects" class="nav-link hover:text-accent-blue transition duration-200">Projects</a>
+                    <a href="#credentials" class="nav-link hover:text-accent-blue transition duration-200">Certs &
+                        Education</a>
+                    <a href="#contact" class="nav-link hover:text-accent-blue transition duration-200">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+                    aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" aria-hidden="true"
+                class="fixed top-0 right-0 h-full w-64 bg-gray-900 transition-transform duration-300 ease-in-out md:hidden z-50 shadow-2xl border-l border-gray-700">
+                <div class="flex flex-col h-full">
+                    <!-- Close Button -->
+                    <div class="flex justify-end p-4">
+                        <button id="mobile-menu-close" class="text-accent-blue hover:text-white transition duration-200"
+                            aria-label="Close menu">
+                            <i data-lucide="x" class="w-8 h-8"></i>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Navigation Links -->
+                    <nav class="flex flex-col space-y-6 px-8 py-4 text-gray-300">
+                        <a href="#home"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Home</a>
+                        <a href="#skills"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Expertise</a>
+                        <a href="#experience"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Experience</a>
+                        <a href="#projects"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Projects</a>
+                        <a href="#credentials"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Certs
+                            & Education</a>
+                        <a href="#contact"
+                            class="mobile-nav-link text-lg hover:text-accent-blue transition duration-200 border-b border-gray-700 pb-3">Contact</a>
+                    </nav>
+
+                    <!-- Social Links in Mobile Menu -->
+                    <div class="mt-auto px-8 py-6 border-t border-gray-700">
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profile"
+                                class="text-gray-400 hover:text-accent-blue transition duration-200">
+                                <i data-lucide="github" class="w-6 h-6" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn Profile"
+                                class="text-gray-400 hover:text-accent-blue transition duration-200">
+                                <i data-lucide="linkedin" class="w-6 h-6" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://dev.to/srijanxi" target="_blank" rel="noopener noreferrer"
+                                aria-label="DEV Community Profile"
+                                class="text-gray-400 hover:text-accent-blue transition duration-200">
+                                <i data-lucide="newspaper" class="w-6 h-6" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:srijansah11@outlook.com" aria-label="Send Email"
+                                class="text-gray-400 hover:text-accent-blue transition duration-200">
+                                <i data-lucide="mail" class="w-6 h-6" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu-overlay"
+                class="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 md:hidden opacity-0 pointer-events-none transition-opacity duration-300"
+                aria-hidden="true"></div>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20 min-h-[70vh]">
+
+            <!-- SECTION 1: HOME (Hero & Summary) -->
+            <section id="home" class="scroll-target pt-8 pb-16">
+                <div class="md:flex md:items-center">
+                    <div class="md:w-3/4">
+                        <h1 class="text-5xl font-extrabold mb-4 leading-tight">
+                            Building secure, intelligent systems <span class="text-accent-blue">for real-world
+                                use.</span>
+                        </h1>
+                        <!---subheadline-->
+                        <h2 class="text-3xl font-semibold mb-2 leading-tight">
+                            Security-focused software engineer working across cybersecurity, <span
+                                class="text-accent-blue">AI/ML, and backend development.</span>
+                        </h2>
+                        <p class="text-xl text-gray-300 leading-relaxed max-w-4xl">
+                            I'm <strong>Srijan Kumar</strong>, a security-focused software engineer building
+                            intelligent, resilient systems at the intersection of cybersecurity and AI/ML.
+                            I design scalable backend solutions that prioritize real-world security and usability.
+                        </p>
+                        <p class="text-xl text-gray-300 leading-relaxed max-w-4xl mt-4">
+                            My experience includes working as an AI Intern at SPARKIIT and contributing as a Guest
+                            Blogger at the <a href="https://dev.to/srijanxi" target="_blank" rel="noopener noreferrer"
+                                class="text-accent-blue hover:underline">DEV Community</a>, where I break down complex
+                            engineering and security problems into actionable solutions.
+                        </p>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="#projects"
+                                class="px-6 py-3 bg-accent-blue text-primary-dark font-semibold rounded-lg shadow-xl hover:opacity-90 transition duration-300 flex items-center">
+                                View Key Projects
+                                <i data-lucide="folder-lock" class="w-5 h-5 ml-2"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                                aria-label="Connect on LinkedIn"
+                                class="px-6 py-3 border border-accent-blue text-accent-blue font-semibold rounded-lg hover:bg-accent-blue/10 transition duration-300 flex items-center">
+                                Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Mock Profile Icon -->
+                    <div class="flex justify-center mt-8 md:mt-0 md:w-1/4">
+                        <img src="img/about.png" alt="Srijan Kumar - Security Engineer" width="192" height="256"
+                            loading="lazy"
+                            class="w-32 h-40 md:w-48 md:h-64 rounded-full border-4 border-accent-blue shadow-lg object-cover">
+                        <!-- Alternatively, use an icon -->
+                        <!------ <i data-lucide="monitor-dot" class="w-32 h-32 text-accent-blue opacity-80"></i> ---->
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: SKILLS (Expertise) -->
+            <section id="skills" class="scroll-target pt-12 pb-16">
+                <h2 class="section-title text-3xl font-bold mb-8">Core Expertise</h2>
+
+                <div class="space-y-10">
+
+                    <!-- Category 1: Cybersecurity & Defensive Tech -->
+                    <div class="p-6 bg-gray-700/40 rounded-xl border border-accent-blue/30">
+                        <h3 class="text-xl font-semibold text-accent-blue mb-4 flex items-center"><i
+                                data-lucide="shield-check" class="w-5 h-5 mr-2"></i> Cyber & Secure Development</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Cybersecurity
+                                Fundamentals</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Secure Software
+                                Development (C++/Python)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Vulnerability
+                                Analysis (Simulations)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">PostgreSQL
+                                (Database Security)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Threat
+                                Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: AI/ML & Data Science -->
+                    <div class="p-6 bg-gray-700/40 rounded-xl border border-accent-blue/30">
+                        <h3 class="text-xl font-semibold text-accent-blue mb-4 flex items-center"><i
+                                data-lucide="brain-circuit" class="w-5 h-5 mr-2"></i> AI & Machine Learning</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Supervised Learning
+                                (Classification/Regression)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Feature Engineering
+                                (StandardScaler, One-Hot, TF-IDF)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Time-Series & NLP
+                                Projects</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Scikit-learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Development & Cloud -->
+                    <div class="p-6 bg-gray-700/40 rounded-xl border border-accent-blue/30">
+                        <h3 class="text-xl font-semibold text-accent-blue mb-4 flex items-center"><i data-lucide="code"
+                                class="w-5 h-5 mr-2"></i> Languages & Tooling</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">C/C++ &
+                                Python</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Cloud Computing
+                                Fundamentals</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Technical Writing &
+                                SEO (Blogger)</span>
+                            <span class="px-3 py-1 bg-gray-700 rounded-full text-sm text-text-light">Web Development
+                                (HTML/CSS/JS)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: EXPERIENCE (Professional & Freelance) -->
+            <section id="experience" class="scroll-target pt-12 pb-16">
+                <h2 class="section-title text-3xl font-bold mb-8">Professional Experience & Contributions</h2>
+
+                <div class="relative border-l-4 border-accent-blue/50 ml-4 md:ml-10">
+
+                    <!-- Experience Block 1: Technical Writer (DEV Community) -->
+                    <div class="mb-10 ml-6 relative">
+                        <div
+                            class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Guest Blogger, Technical Writer & Ghost Writer
+                        </h3>
+                        <p class="text-gray-400 mb-2">DEV Community (Forem) | Nov 2023 â€“ Present</p>
+                        <ul class="list-disc space-y-2 pl-5 text-gray-300">
+                            <li>Published 25+ high-impact technical articles on cybersecurity, C++, and AI, achieving
+                                12,000+ cumulative organic views in 6 months through strategic SEO optimization.</li>
+                            <li>Authored 30+ ghostwritten articles across diverse tech topics, collaborating with the
+                                community to identify trending topics and increasing article relevance by 25%.</li>
+                            <li>Educated beginner-to-intermediate developers through clarity-focused content structure,
+                                resulting in consistent feature placements.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Block 2: AI Intern -->
+                    <div class="mb-10 ml-6 relative">
+                        <div
+                            class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Artificial Intelligence Intern</h3>
+                        <p class="text-gray-400 mb-2">SPARKIIT | June 2025 â€“ August 2025</p>
+                        <ul class="list-disc space-y-2 pl-5 text-gray-300">
+                            <li>Developed 5 end-to-end ML projects (classification, regression, recommendation),
+                                achieving 82-100% model accuracy through systematic data preprocessing.</li>
+                            <li>Engineered modular codebase architecture, reducing code complexity by 40% and enabling
+                                20% faster project iteration cycles.</li>
+                            <li>Implemented supervised learning algorithms using Scikit-learn, applying advanced feature
+                                engineering techniques (StandardScaler, One-Hot, TF-IDF).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Block 3: Technical Trainee -->
+                    <div class="mb-10 ml-6 relative">
+                        <div
+                            class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Technical Trainee - Industrial Training</h3>
+                        <p class="text-gray-400 mb-2">Indian Railways (Modern Rail Coach Factory) | June 2025 â€“ July
+                            2025</p>
+                        <ul class="list-disc space-y-2 pl-5 text-gray-300">
+                            <li>Completed one-month technical training, gaining practical exposure to industrial
+                                processes, machinery operations, and workflow optimization.</li>
+                            <li>Applied analytical and problem-solving skills to understand manufacturing systems and
+                                technology integration.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Block 4: Web Dev Intern -->
+                    <div class="mb-10 ml-6 relative">
+                        <div
+                            class="absolute w-4 h-4 bg-accent-blue rounded-full -left-8 md:-left-12 top-1 border-4 border-primary-dark">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-100">Web Development Intern</h3>
+                        <p class="text-gray-400 mb-2">CodSoft | April 2025 â€“ May 2025</p>
+                        <ul class="list-disc space-y-2 pl-5 text-gray-300">
+                            <li>Developed 3 responsive front-end projects (landing page, calculator app, portfolio
+                                website) using HTML5, CSS3, and JavaScript.</li>
+                            <li>Implemented CSS Grid and Flexbox layout systems to create pixel-perfect UI designs with
+                                95% cross-browser compatibility.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 4: PROJECTS -->
+            <section id="projects" class="scroll-target pt-12 pb-16">
+                <h2 class="section-title text-3xl font-bold mb-8">Selected Projects & Simulations</h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1: MM-CT-DAS -->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="scan" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">MM-CT-DAS: Multi-Modal Threat Detection
+                            System</h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: Cybersecurity, AI/ML, C++</p>
+                        <p class="text-gray-300 text-sm">A Production-Ready Cybersecurity Detection System utilizing
+                            trained ML models for comprehensive threat analysis. Showcases skills in C++, security
+                            architecture, and AI-driven defense.</p>
+                        <a href="https://github.com/Srijan-XI/MM-CT-DAS" target="_blank" rel="noopener noreferrer"
+                            aria-label="View MM-CT-DAS on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 2: ThreatFusion -->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="network" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">ThreatFusion: Modular Threat Detection
+                            Suite</h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: Multi-Layered Security, C++, Python, Go</p>
+                        <p class="text-gray-300 text-sm">Modular project combining C++, Python, and Go to deliver
+                            multi-layered threat detection through network scanning, log analysis, and behavioral
+                            monitoring for comprehensive security assessment.</p>
+                        <a href="https://github.com/Srijan-XI/ThreatFusion" target="_blank" rel="noopener noreferrer"
+                            aria-label="View ThreatFusion on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 3: ShieldBlocker-V8 (Web Extension) -->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="shield-ban" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">ShieldBlocker-V8: Cross-Browser Ad Blocker
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: Browser Security, JavaScript, WebExtensions</p>
+                        <p class="text-gray-300 text-sm">A lightweight, cross-browser (Chrome and Firefox) ad blocker
+                            powered by WebExtension APIs. Blocks intrusive ads using static filter rules and allows
+                            per-site control.</p>
+                        <a href="https://github.com/Srijan-XI/ShieldBlocker-V8" target="_blank"
+                            rel="noopener noreferrer" aria-label="View ShieldBlocker-V8 on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project Card 4: FLTK -->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="bar-chart-3" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">FLTK: Freelancer Toolkit</h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: Flask, Web Application, Freelancing Tools</p>
+                        <p class="text-gray-300 text-sm">A self-hosted web application built with Flask that brings
+                            together every tool a freelancer needs in one
+                            place from deadline prediction to invoicing, expense tracking, and profitability reports.
+                        </p>
+                        <a href="https://github.com/Srijan-XI/FLTK" target="_blank" rel="noopener noreferrer"
+                            aria-label="View FLTK on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!-------------------project 05--------------->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="vault" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2">ThreatViz: Cybersecurity Threat
+                            Intelligence Dashboard</h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: Threat Intelligence, Network Security, C++</p>
+                        <p class="text-gray-300 text-sm">ThreatViz is a modular cybersecurity project that combines C++,
+                            Python, and Go to deliver multi-layered threat detection through network scanning, log
+                            analysis, and behavioral monitoring for comprehensive security assessment.</p>
+                        <a href="https://github.com/Srijan-XI/ThreatViz" target="_blank" rel="noopener noreferrer"
+                            aria-label="View ThreatViz on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <!-------------------project 06--------------->
+                    <div class="project-card bg-gray-700/40 p-6 rounded-xl border border-accent-blue/30 shadow-lg">
+                        <i data-lucide="file-text" class="w-8 h-8 text-accent-blue mb-3"></i>
+                        <h3 class="text-xl font-semibold text-gray-100 mb-2"> PDF Downloader</h3>
+                        <p class="text-sm text-gray-400 mb-4">Focus: PDF Management, Downloading, and Processing</p>
+                        <p class="text-gray-300 text-sm">A professional Tkinter-based PDF downloader with concurrent
+                            downloads, network speed monitoring, and pause/resume functionality.
+                            Easily build standalone executables for Windows, Linux, and macOS.</p>
+
+                        <a href="https://github.com/Srijan-XI/PDF-Downloader" target="_blank" rel="noopener noreferrer"
+                            aria-label="View PDF Downloader on GitHub (opens in new tab)"
+                            class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View GitHub Repo <i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"
+                                aria-hidden="true"></i>
+                        </a>
+                        <!----
+                        <a href="https://ai-project-manager-auth0.vercel.app/" target="_blank" class="mt-4 inline-block text-accent-blue font-medium hover:text-white transition duration-200">
+                            View Live Demo<i data-lucide="external-link" class="w-4 h-4 inline-block ml-1"></i>
+                        </a> --->
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <!-- SECTION 5: CREDENTIALS (Education & Certifications) -->
+            <section id="credentials" class="scroll-target pt-12 pb-16">
+                <h2 class="section-title text-3xl font-bold mb-8">Education & Certifications</h2>
+
+                <div class="p-8 mb-10 bg-gray-700/40 rounded-xl border border-accent-blue/50 shadow-lg">
+                    <h3 class="text-2xl font-semibold text-accent-blue mb-4 flex items-center"><i
+                            data-lucide="book-open-check" class="w-6 h-6 mr-3"></i> Key Certifications & Training</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="p-3 bg-gray-700/40 rounded-lg border-l-4 border-accent-blue shadow-md">
+                            <span class="font-medium">Deloitte Australia - Cyber Job Simulation</span>
+                            <p class="text-sm text-gray-400">Focus: Practical Cyber Scenarios, Incident Response.</p>
+                        </li>
+                        <li class="p-3 bg-gray-700/40 rounded-lg border-l-4 border-accent-blue shadow-md">
+                            <span class="font-medium">Tata Group - Cybersecurity Analyst Job Simulation</span>
+                            <p class="text-sm text-gray-400">Focus: Analyst Workflow & SOC Triage.</p>
+                        </li>
+                        <li class="p-3 bg-gray-700/40 rounded-lg border-l-4 border-accent-blue shadow-md">
+                            <span class="font-medium">Career Essentials in Cybersecurity (Microsoft & LinkedIn)</span>
+                            <p class="text-sm text-gray-400">Focus: Foundational Security Principles.</p>
+                        </li>
+                        <li class="p-3 bg-gray-700/40 rounded-lg border-l-4 border-accent-blue shadow-md">
+                            <span class="font-medium">Technical Training at Modern Rail Coach Factory</span>
+                            <p class="text-sm text-gray-400">Focus: Industrial processes and technology integration.</p>
+                        </li>
+                        <li class="p-3 bg-gray-700/40 rounded-lg border-l-4 border-accent-blue shadow-md">
+                            <span class="font-medium">Acmegrade Certification for Cybersecurity</span>
+                            <p class="text-sm text-gray-400">Focus: Technical Training & Concepts.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <!-- Education -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent-blue mb-4 flex items-center"><i
+                                data-lucide="graduation-cap" class="w-6 h-6 mr-2"></i> Education</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="p-3 bg-gray-700/40 rounded-lg shadow-md">
+                                <p class="font-medium">B.Tech, Computer Science and Engineering</p>
+                                <p class="text-sm text-gray-400">I. K. Gujral Punjab Technical University (IKGPTU) |
+                                    Expected: July 2027</p>
+                            </li>
+                            <li class="p-3 bg-gray-700/40 rounded-lg shadow-md">
+                                <p class="font-medium">Senior Secondary (11th & 12th) - Math & Science</p>
+                                <p class="text-sm text-gray-400">Maharani Kalyani College | 2021 - 2023</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: CONTACT -->
+            <section id="contact" class="scroll-target pt-12 pb-16">
+                <h2 class="section-title text-3xl font-bold mb-8">Get In Touch</h2>
+
+                <div
+                    class="bg-gray-700/30 p-6 md:p-8 rounded-xl shadow-lg max-w-3xl mx-auto border border-accent-blue/20 text-center">
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto leading-relaxed">
+                        I'm actively seeking opportunities to build secure and intelligent systems. Let's collaborate!
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
+                        <!-- Contact Email -->
+                        <a href="mailto:srijansah11@outlook.com" aria-label="Send email to Srijan Kumar"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="mail"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">Email</span>
+                            <span class="text-xs text-gray-400 mt-1">srijansah11@outlook.com</span>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on LinkedIn (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="linkedin"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">LinkedIn</span>
+                            <span class="text-xs text-gray-400 mt-1">Let's connect</span>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on GitHub (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="github"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">GitHub</span>
+                            <span class="text-xs text-gray-400 mt-1">View my code</span>
+                        </a>
+
+                        <!-- DEV.to -->
+                        <a href="https://dev.to/srijan-xi" target="_blank" rel="noopener noreferrer"
+                            aria-label="Srijan Kumar on DEV Community (opens in new tab)"
+                            class="flex flex-col items-center justify-center p-4 bg-gray-800/50 hover:bg-gray-700/80 rounded-xl border border-gray-600 hover:border-accent-blue transition-all duration-300 group shadow-sm hover:shadow-accent-blue/10">
+                            <i data-lucide="newspaper"
+                                class="w-6 h-6 mb-2 text-accent-blue group-hover:scale-110 transition-transform duration-300"
+                                aria-hidden="true"></i>
+                            <span
+                                class="text-base font-medium text-gray-200 group-hover:text-white transition-colors">DEV.to</span>
+                            <span class="text-xs text-gray-400 mt-1">Read my articles</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary-dark/90 mt-12 py-8 border-t border-gray-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+                <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 text-sm text-gray-400">
+                    <a href="https://github.com/Srijan-XI" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">GitHub</a>
+                    <a href="https://www.linkedin.com/in/srijan-xi" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">LinkedIn</a>
+                    <a href="https://dev.to/srijan-xi" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-accent-blue transition duration-200">DEV.to</a>
+                    <a href="mailto:srijansah11@outlook.com"
+                        class="hover:text-accent-blue transition duration-200">Email</a>
+                </div>
+                <p class="text-sm text-gray-500">&copy; <span id="copyright-year">2026</span> Srijan Kumar &amp;
+                    Srijan-XI. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn"
+        class="fixed bottom-8 right-8 p-3 bg-accent-blue text-primary-dark rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50 hover:scale-110"
+        aria-label="Scroll to top">
+        <i data-lucide="arrow-up" class="w-5 h-5" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>
